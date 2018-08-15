@@ -1,0 +1,44 @@
+.seomasters-recent-post-card {
+    display: block;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.seomasters-recent-post-title {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.75rem 1rem;
+    color: #f9b40c;
+}
+
+.seomasters-recent-post-card:hover .seomasters-recent-post-title {
+    display: none;
+}
+
+.seomasters-recent-post-taxonomy {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #f9b40c;
+    list-style: none;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    text-align: center;
+    transition: opacity .5s;
+}
+
+.seomasters-recent-post-card:hover .seomasters-recent-post-taxonomy {
+    visibility: visible;
+    opacity: 1;
+}

@@ -1,0 +1,39 @@
+$(document).ready(function () {
+    var wrapper = $('#seomasters-modal-contact-form');
+    if (wrapper.length) {
+        $.get('/main/pages/blog-feedback/', function (html) {
+            //console.log(html)
+            wrapper.append(html);
+
+
+                //$('input#phone').inputmask("+99 (999) 999 99 99").val("380");
+
+            var selector = document.getElementById('phone');
+            var im = new Inputmask('+38 (099) 999 99 99');
+
+            im.mask(selector);
+
+            wrapper.find('form.form-consultation-new')
+                .removeClass('lirax-custom-form')
+                .find('button[type=submit]').removeAttr('onclick')
+                .on('click', function (e) {
+                    e.preventDefault();
+                    var formData = $(this).closest('form').serializeArray();
+                    var i = Date.now();
+                    $.each(formData, function (e, t) {
+                        "lirax_deal_cf_449501" == t.name && (i = t.value)
+                    }), $.ajax({
+                        url     : '/telegram/default/send/',
+                        dataType: 'html',
+                        method  : 'post',
+                        data    : formData,
+                        success : function (response) {
+
+                        }
+                    });
+                    window.location.href = '/spasibo/' + i + '/';
+                });
+        });
+    }
+
+});

@@ -1,0 +1,16 @@
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /*page=
+Disallow: /*action=
+
+User-agent: Yandex
+Disallow: /admin/
+Disallow: /*page=
+Disallow: /*action=
+Host: https://seomasters.com.ua
+
+User-agent: *
+Disallow: /admin/
+Disallow: /*page=
+Disallow: /*action=
+Sitemap: https://seomasters.com.ua/sitemap.xml

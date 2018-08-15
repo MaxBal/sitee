@@ -1,0 +1,7 @@
+jQuery(document).ready(function ($) {
+    $('.seomasters-recent-post-taxonomy span[data-href], .post-meta-info span[data-href]').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        window.location = $(this).data('href');
+    });
+});

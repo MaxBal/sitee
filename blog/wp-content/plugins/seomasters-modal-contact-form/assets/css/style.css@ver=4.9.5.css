@@ -1,0 +1,141 @@
+#seomasters-modal-contact-form .heading-row .text {
+    font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.form-consultation, .form-consultation-new {
+    margin: 1rem 0 1rem 10px
+}
+
+.form-consultation-new .form-group {
+    margin: 12px 0;
+}
+
+.form-consultation-new .form-group .input-holder,
+.form-consultation .form-group .input-holder {
+    background: rgba(0, 0, 0, .7);
+    padding-left: 50px;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.form-consultation-new .form-group .input-holder.message,
+.form-consultation .form-group .input-holder.message {
+    background: rgba(0, 0, 0, .7) url("../images/ico-quote2.png") 21px 24px no-repeat
+}
+
+.form-consultation-new .form-group .input-holder.message:before,
+.form-consultation .form-group .input-holder.message:before {
+    top: 29px
+}
+
+.form-consultation-new .form-group .input-holder.name,
+.form-consultation .form-group .input-holder.name {
+    background: rgba(0, 0, 0, .7) url("../images/ico-user.png") 21px 50% no-repeat;
+    background-size: 10px 10px
+}
+
+.form-consultation-new .form-group .input-holder.email,
+.form-consultation .form-group .input-holder.email {
+    background: rgba(0, 0, 0, .7) url("../images/ico-mail.png") 21px 50% no-repeat;
+    background-size: 10px 8px
+}
+
+.form-consultation-new .form-group .input-holder.phone,
+.form-consultation .form-group .input-holder.phone {
+    background: rgba(0, 0, 0, .7) url("../images/ico-phone2.png") 21px 50% no-repeat;
+    background-size: 10px 10px
+}
+
+.form-consultation-new .form-group .input-holder:before,
+.form-consultation .form-group .input-holder:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    left: 46px;
+    width: 1px;
+    height: 4px;
+    background: #ffffff;
+    display: none;
+}
+
+.form-consultation-new .form-group .input-holder input[type=email],
+.form-consultation-new .form-group .input-holder input[type=text],
+.form-consultation-new .form-group .input-holder textarea,
+.form-consultation .form-group .input-holder input[type=email],
+.form-consultation .form-group .input-holder input[type=text],
+.form-consultation .form-group .input-holder textarea {
+    background: none;
+    border: 0;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 17px 10px;
+    outline: none
+}
+
+.form-consultation-new .form-group .input-holder input[type=email]:focus,
+.form-consultation-new .form-group .input-holder input[type=text]:focus,
+.form-consultation-new .form-group .input-holder textarea:focus,
+.form-consultation .form-group .input-holder input[type=email]:focus,
+.form-consultation .form-group .input-holder input[type=text]:focus,
+.form-consultation .form-group .input-holder textarea:focus {
+    box-shadow: none
+}
+
+.form-consultation-new .form-group .input-holder input[type=email]::-moz-placeholder,
+.form-consultation-new .form-group .input-holder input[type=text]::-moz-placeholder,
+.form-consultation-new .form-group .input-holder textarea::-moz-placeholder,
+.form-consultation .form-group .input-holder input[type=email]::-moz-placeholder,
+.form-consultation .form-group .input-holder input[type=text]::-moz-placeholder,
+.form-consultation .form-group .input-holder textarea::-moz-placeholder {
+    color: #ffffff;
+    text-transform: uppercase
+}
+
+.form-consultation-new .form-group .input-holder input[type=email]::-webkit-input-placeholder,
+.form-consultation-new .form-group .input-holder input[type=text]::-webkit-input-placeholder,
+.form-consultation-new .form-group .input-holder textarea::-webkit-input-placeholder,
+.form-consultation .form-group .input-holder input[type=email]::-webkit-input-placeholder,
+.form-consultation .form-group .input-holder input[type=text]::-webkit-input-placeholder,
+.form-consultation .form-group .input-holder textarea::-webkit-input-placeholder {
+    color: #ffffff;
+    text-transform: uppercase
+}
+
+.form-consultation-new .form-group .input-holder input[type=email]::-ms-input-placeholder,
+.form-consultation-new .form-group .input-holder input[type=text]::-ms-input-placeholder,
+.form-consultation-new .form-group .input-holder textarea::-ms-input-placeholder,
+.form-consultation .form-group .input-holder input[type=email]::-ms-input-placeholder,
+.form-consultation .form-group .input-holder input[type=text]::-ms-input-placeholder,
+.form-consultation .form-group .input-holder textarea::-ms-input-placeholder {
+    color: #ffffff;
+    text-transform: uppercase
+}
+
+.form-consultation-new .form-group .input-holder input[type=email]::-o-input-placeholder,
+.form-consultation-new .form-group .input-holder input[type=text]::-o-input-placeholder,
+.form-consultation-new .form-group .input-holder textarea::-o-input-placeholder,
+.form-consultation .form-group .input-holder input[type=email]::-o-input-placeholder,
+.form-consultation .form-group .input-holder input[type=text]::-o-input-placeholder,
+.form-consultation .form-group .input-holder textarea::-o-input-placeholder {
+    color: #ffffff;
+    text-transform: uppercase
+}
+
+.form-consultation-new .form-group .input-holder textarea,
+.form-consultation .form-group .input-holder textarea {
+    resize: none;
+    height: 90px;
+    padding-top: 15px
+}
+
+.form-consultation-new button[type=submit],
+.form-consultation button[type=submit] {
+    font-size: 13px;
+    height: 45px;
+    border-radius: 3px;
+    line-height: 45px;
+    margin-top: 8px
+}
